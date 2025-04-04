@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build" # Build command for Next.js
+  publish = ".next"         # Directory where Next.js outputs the build
+  base = ""                 # Leave empty unless using a monorepo
+
+[functions]
+  directory = "netlify/functions" # Directory for serverless functions (optional)
+
+# Netlify Next.js plugin for optimized builds
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
